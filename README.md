@@ -30,7 +30,9 @@ Cada célula de manufatura é composta por:
 Modelar um sistema com 4 células de manufatura interligadas, garantindo funcionamento contínuo, sincronizado e sem bloqueios, utilizando **CPN Tools** para simulação e análise.
 
 ---
+## Modelagem
 
+---
 ## Tecnologias Utilizadas
 
 - [CPN Tools](https://cpntools.org/) – Edição, simulação e análise de Redes de Petri Coloridas  
@@ -57,7 +59,7 @@ Modelar um sistema com 4 células de manufatura interligadas, garantindo funcion
 
 ---
 
-## 🎬 Demonstração em Vídeo
+## Demonstração em Vídeo
 
 Assista à explicação e simulação do modelo no YouTube:  
 [Clique aqui para ver o vídeo]()
