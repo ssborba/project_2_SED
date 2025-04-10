@@ -78,6 +78,6 @@ Assista à explicação e simulação do modelo no YouTube:
 
 ## Integrantes do Grupo
 
-- Nome 1 – Matrícula  
-- Nome 2 – Matrícula  
-- Nome 3 – Matrícula
+- Gabrielle Pereira  
+- Sarah Borba
+- Victor Gomes
