@@ -58,7 +58,7 @@ Encaminha os itens da **saída das Máquinas 2 e 3** para o **depósito de saíd
 
 A modelagem das máquinas foi feita utilizando uma estrutura genérica reaproveitável. A mesma lógica foi aplicada às três máquinas, com ajustes apenas nas rotas de entrada e saída. 
 
-![Modelo para Máquina 1, 2, 3](imagens/Máquinas.jpeg)
+![Modelo para Máquina 1, 2, 3](imagens/sistema.jpeg)
 
 ---
 ## Tecnologias Utilizadas
