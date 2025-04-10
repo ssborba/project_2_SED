@@ -74,7 +74,11 @@ A modelagem das máquinas foi feita utilizando uma estrutura genérica reaprovei
 📁 modelo/
    └── robos_manufatura.cpn      # Arquivo principal do modelo CPN
 📁 imagens/
-   └── modelo-exemplo.png            # Ilustração do modelo (opcional)
+   └── Máquinas.jpeg            # Ilustrações
+   └── R1.jpeg
+   └── R2.jpeg
+   └── R3.jpeg
+   └── sistema.jpeg
 📄 README.md                         # Documentação (este arquivo)
 
 
