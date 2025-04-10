@@ -58,7 +58,7 @@ Encaminha os itens da **saída das Máquinas 2 e 3** para o **depósito de saíd
 
 A modelagem das máquinas foi feita utilizando uma estrutura genérica reaproveitável. A mesma lógica foi aplicada às três máquinas, com ajustes apenas nas rotas de entrada e saída. 
 
-![Modelo para Máquina 1, 2, 3](imagens/sistema.jpeg)
+![Modelo para Máquina 1, 2, 3](imagens/Máquinas.jpeg)
 
 ---
 ## Tecnologias Utilizadas
@@ -83,7 +83,7 @@ A modelagem das máquinas foi feita utilizando uma estrutura genérica reaprovei
 ## Ilustração Geral
 
 
-![Exemplo de modelo CPN](imagens/modelo-exemplo.png)
+![Modelo do Sistema](imagens/sistema.jpeg)
 
 ---
 
