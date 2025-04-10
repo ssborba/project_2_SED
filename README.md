@@ -30,7 +30,35 @@ Cada célula de manufatura é composta por:
 Modelar um sistema com 4 células de manufatura interligadas, garantindo funcionamento contínuo, sincronizado e sem bloqueios, utilizando **CPN Tools** para simulação e análise.
 
 ---
-## Modelagem
+## Modelagem no CPN Tools
+
+A modelagem do sistema foi realizada no **CPN Tools** utilizando Redes de Petri Coloridas. O modelo foi dividido em módulos representando as funções principais do sistema de manufatura: o transporte por robôs, o processamento nas máquinas e a coordenação geral entre as quatro células.
+
+### Robô 1
+
+Este módulo representa o transporte dos itens do **depósito de entrada da célula** para o **depósito de entrada da Máquina 1**. 
+
+![Robô R1](imagens/modelo-exemplo.png)
+
+### Robô 2
+
+Responsável por transferir os itens da **saída da Máquina 1** para os depósitos de entrada das **Máquinas 2 e 3**.  
+
+![Robô R2](imagens/modelo-exemplo.png)
+
+### 🤖 Robô 3
+
+Encaminha os itens da **saída das Máquinas 2 e 3** para o **depósito de saída da célula**.  
+
+![Robô R3](imagens/modelo-exemplo.png)
+
+---
+
+### 🛠️ Máquinas
+
+A modelagem das máquinas foi feita utilizando uma estrutura genérica reaproveitável. A mesma lógica foi aplicada às três máquinas, com ajustes apenas nas rotas de entrada e saída. 
+
+![Modelo para Máquina 1, 2, 3](imagens/modelo-exemplo.png)
 
 ---
 ## Tecnologias Utilizadas
@@ -52,7 +80,7 @@ Modelar um sistema com 4 células de manufatura interligadas, garantindo funcion
 
 ```
 
-## Ilustração do Modelo
+## Ilustração Geral
 
 
 ![Exemplo de modelo CPN](imagens/modelo-exemplo.png)
