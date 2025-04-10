@@ -40,3 +40,42 @@ Modelar um sistema com 4 células de manufatura interligadas, garantindo funcion
 
 ## Estrutura do Repositório
 
+```
+📁 modelo/
+   └── sistema-manufatura.cpnet      # Arquivo principal do modelo CPN
+📁 imagens/
+   └── modelo-exemplo.png            # Ilustração do modelo (opcional)
+📄 README.md                         # Documentação (este arquivo)
+
+## 🖼️ Ilustração do Modelo
+
+> _Adicione aqui uma imagem da interface do CPN Tools mostrando sua modelagem, por exemplo:_
+
+![Exemplo de modelo CPN](imagens/modelo-exemplo.png)
+
+---
+
+## 🎬 Demonstração em Vídeo
+
+Assista à explicação e simulação do modelo no YouTube:  
+📺 [Clique aqui para ver o vídeo](https://youtube.com/SEU-LINK-AQUI)
+
+> ⏱️ Lembre-se: o vídeo deve ter no máximo 8 minutos. Cada minuto extra desconta 0,5 ponto.
+
+---
+
+## 🧪 Como Executar o Modelo
+
+1. Instale o [CPN Tools](https://cpntools.org/)
+2. Instale o [Java (Oracle)](https://www.java.com/pt-BR/)
+3. Baixe este repositório e abra o arquivo `.cpnet` na pasta `modelo/`
+4. Use o CPN Tools para simular o funcionamento do sistema de manufatura
+5. Analise os fluxos, limites de armazenamento e ausência de bloqueios
+
+---
+
+## 👨‍💻 Integrantes do Grupo
+
+- Nome 1 – Matrícula  
+- Nome 2 – Matrícula  
+- Nome 3 – Matrícula
