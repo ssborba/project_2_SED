@@ -72,7 +72,7 @@ A modelagem das máquinas foi feita utilizando uma estrutura genérica reaprovei
 
 ```
 📁 modelo/
-   └── sistema-manufatura.cpnet      # Arquivo principal do modelo CPN
+   └── robos_manufatura.cpn      # Arquivo principal do modelo CPN
 📁 imagens/
    └── modelo-exemplo.png            # Ilustração do modelo (opcional)
 📄 README.md                         # Documentação (este arquivo)
