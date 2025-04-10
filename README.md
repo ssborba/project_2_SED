@@ -38,27 +38,27 @@ A modelagem do sistema foi realizada no **CPN Tools** utilizando Redes de Petri 
 
 Este módulo representa o transporte dos itens do **depósito de entrada da célula** para o **depósito de entrada da Máquina 1**. 
 
-![Robô R1](imagens/modelo-exemplo.png)
+![Robô R1](imagens/R1.jpeg)
 
 ### Robô 2
 
 Responsável por transferir os itens da **saída da Máquina 1** para os depósitos de entrada das **Máquinas 2 e 3**.  
 
-![Robô R2](imagens/modelo-exemplo.png)
+![Robô R2](imagens/R2.jpeg)
 
-### 🤖 Robô 3
+### Robô 3
 
 Encaminha os itens da **saída das Máquinas 2 e 3** para o **depósito de saída da célula**.  
 
-![Robô R3](imagens/modelo-exemplo.png)
+![Robô R2](imagens/R3.jpeg)
 
 ---
 
-### 🛠️ Máquinas
+### Máquinas
 
 A modelagem das máquinas foi feita utilizando uma estrutura genérica reaproveitável. A mesma lógica foi aplicada às três máquinas, com ajustes apenas nas rotas de entrada e saída. 
 
-![Modelo para Máquina 1, 2, 3](imagens/modelo-exemplo.png)
+![Modelo para Máquina 1, 2, 3](imagens/Máquinas.jpeg)
 
 ---
 ## Tecnologias Utilizadas
