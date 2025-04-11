@@ -32,17 +32,14 @@ Modelar um sistema com 4 células de manufatura interligadas, garantindo funcion
 ---
 ## Modelagem no CPN Tools
 
-A modelagem desenvolvida no CPN Tools representa detalhadamente o funcionamento interno de uma célula de manufatura automatizada, composta por três máquinas e três robôs. O fluxo inicia no depósito de entrada da célula e avança por cada estágio de produção, controlado por uma lógica de transições e condições que garantem a ordem, limite de itens e ausência de bloqueios no sistema.
+A modelagem desenvolvida no CPN Tools representa detalhadamente o funcionamento interno de uma célula de manufatura automatizada, composta por três máquinas e três robôs. A Manufatura que modelamos contém um depósito de entrada, três máquinas (M1, M2 e M3), três robôs e um depósito de saída. Os robôs são responsáveis por mover as peças entre as máquinas, e cada depósito só pode armazenar no máximo 4 fichas.
 
-O Robô 1 é responsável por iniciar o processo, transportando itens do depósito de entrada da célula para o buffer da Máquina 1. Esse transporte só ocorre quando há itens disponíveis e espaço suficiente na máquina, o que é controlado por condições de disparo nas transições.
+O fluxo do sistema funciona da seguinte forma: o Robô 1 leva uma ficha do depósito de entrada até a Máquina 1. A M1 processa essa ficha e a envia para o Robô 2, que pode levá-la até a Máquina 2 ou 3. Após esse segundo processamento, o Robô 3 leva a ficha final até o depósito de saída da célula.
 
-Em seguida, o Robô 2 realiza a distribuição dos itens processados pela Máquina 1 para as Máquinas 2 e 3. O modelo utiliza transições (ações) paralelas para representar as duas possíveis rotas e uma lógica de escolha baseada na disponibilidade dos buffers dessas máquinas, nos recursos disponíveis no out da Máquina 1. 
+Para garantir que o sistema funcione corretamente e não ultrapasse o limite de 4 fichas por depósito, usamos o que chamamos de complementares. Eles representam o espaço disponível em cada depósito. Por exemplo, se o depósito da M1 tiver 3 fichas, o complementar terá apenas 1. Se tentar entrar mais uma ficha sem espaço, o sistema não permite — isso evita travamentos e bloqueios.
 
-Após o processamento nas Máquinas 2 e 3, os itens são recolhidos pelo Robô 3, que os leva até o depósito de saída da célula. O modelo verifica se há espaço disponível no depósito final antes de permitir a movimentação, assegurando que o sistema não entre em estado de bloqueio por falta de armazenamento.
+A modelagem foi feita dividindo os blocos em: robôs, máquinas e o sistema geral. Cada máquina tem um depósito de entrada, uma transição que representa o processamento, e um depósito de saída. Os robôs conectam essas etapas com controle baseado nos complementares. Reaproveitamos a estrutura das máquinas para as três etapas, o que deixou o modelo modular e organizado. No final, todas essas partes foram integradas em uma célula completa, que representa o 
 
-Todas as máquinas do sistema compartilham a mesma estrutura de modelagem: um lugar de entrada que representa o buffer, uma transição que simula o tempo de processamento e um lugar de saída onde o item é disponibilizado para o próximo estágio. Esse padrão modular foi replicado nas três máquinas da célula, simplificando o desenvolvimento e permitindo reutilização.
-
-Por fim, todas essas partes estão integradas em uma estrutura única representando a célula de manufatura completa. O sistema geral simula o fluxo completo da produção, levando em consideração uma única célula. A modelagem foi validada para garantir a não ocorrência de deadlocks e respeitar a limitação de quatro itens por depósito, conforme as especificações do projeto.
 
 ### Manufatura
 
