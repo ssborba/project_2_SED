@@ -32,7 +32,17 @@ Modelar um sistema com 4 células de manufatura interligadas, garantindo funcion
 ---
 ## Modelagem no CPN Tools
 
-A modelagem do sistema foi realizada no **CPN Tools** utilizando Redes de Petri Coloridas. O modelo foi dividido em módulos representando as funções principais do sistema de manufatura: o transporte por robôs, o processamento nas máquinas e a coordenação geral entre as quatro células.
+A modelagem desenvolvida no CPN Tools representa detalhadamente o funcionamento interno de uma célula de manufatura automatizada, composta por três máquinas e três robôs. O fluxo inicia no depósito de entrada da célula e avança por cada estágio de produção, controlado por uma lógica de transições e condições que garantem a ordem, limite de itens e ausência de bloqueios no sistema.
+
+O Robô 1 é responsável por iniciar o processo, transportando itens do depósito de entrada da célula para o buffer da Máquina 1. Esse transporte só ocorre quando há itens disponíveis e espaço suficiente na máquina, o que é controlado por condições de disparo nas transições.
+
+Em seguida, o Robô 2 realiza a distribuição dos itens processados pela Máquina 1 para as Máquinas 2 e 3. O modelo utiliza transições (ações) paralelas para representar as duas possíveis rotas e uma lógica de escolha baseada na disponibilidade dos buffers dessas máquinas, nos recursos disponíveis no out da Máquina 1. 
+
+Após o processamento nas Máquinas 2 e 3, os itens são recolhidos pelo Robô 3, que os leva até o depósito de saída da célula. O modelo verifica se há espaço disponível no depósito final antes de permitir a movimentação, assegurando que o sistema não entre em estado de bloqueio por falta de armazenamento.
+
+Todas as máquinas do sistema compartilham a mesma estrutura de modelagem: um lugar de entrada que representa o buffer, uma transição que simula o tempo de processamento e um lugar de saída onde o item é disponibilizado para o próximo estágio. Esse padrão modular foi replicado nas três máquinas da célula, simplificando o desenvolvimento e permitindo reutilização.
+
+Por fim, todas essas partes estão integradas em uma estrutura única representando a célula de manufatura completa. O sistema geral simula o fluxo completo da produção, levando em consideração uma única célula. A modelagem foi validada para garantir a não ocorrência de deadlocks e respeitar a limitação de quatro itens por depósito, conforme as especificações do projeto.
 
 ### Robô 1
 
