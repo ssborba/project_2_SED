@@ -47,6 +47,12 @@ Manufatura, representando o maior nível de hierarquia do sistema, contendo sub-
 
 ![Manufatura](imagens/Manufatura.jpeg)
 
+### Célula
+
+Célula, segundo maior nível de hierarquia, cada célula contém três máquinas e três robôs.
+
+![Célula](imagens/sistema.jpeg)
+
 ### Robô 1
 
 Este módulo representa o transporte dos itens do **depósito de entrada da célula** para o **depósito de entrada da Máquina 1**. 
@@ -96,13 +102,6 @@ A modelagem das máquinas foi feita utilizando uma estrutura genérica reaprovei
 
 
 ```
-
-## Ilustração Geral
-
-
-![Modelo do Sistema](imagens/sistema.jpeg)
-
----
 
 ## Demonstração em Vídeo
 
