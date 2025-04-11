@@ -118,7 +118,7 @@ Assista à explicação e simulação do modelo no YouTube:
 2. Instale o [Java (Oracle)](https://www.java.com/pt-BR/)
 3. Baixe este repositório e abra o arquivo `.cpnet` na pasta `modelo/`
 4. Use o CPN Tools para simular o funcionamento do sistema de manufatura
-5. 
+
 ---
 
 ## Integrantes do Grupo
