@@ -1,6 +1,6 @@
 # Projeto 2 - Sistema de Manufatura com Redes de Petri Coloridas
 
-Este projeto consiste na modelagem de um sistema de manufatura com quatro células utilizando **Redes de Petri Coloridas (CPN)**, desenvolvido como parte da disciplina **Sistemas Embarcados Discretos (SED)** no período 2024.2 da **UFCG**.
+Este projeto consiste na modelagem de um sistema de manufatura com quatro células utilizando **Redes de Petri Coloridas (CPN)**, desenvolvido como parte da disciplina **Sistemas a Eventos Discretos (SED)** no período 2024.2 da **UFCG**.
 
 ---
 
@@ -106,7 +106,7 @@ A modelagem das máquinas foi feita utilizando uma estrutura genérica reaprovei
 ## Demonstração em Vídeo
 
 Assista à explicação e simulação do modelo no YouTube:  
-[Clique aqui para ver o vídeo]()
+[Clique aqui para ver o vídeo](https://youtu.be/cIlXSo69eLA)
 
 
 ---
