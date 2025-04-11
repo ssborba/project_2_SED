@@ -38,7 +38,7 @@ O fluxo do sistema funciona da seguinte forma: o Robô 1 leva uma ficha do depó
 
 Para garantir que o sistema funcione corretamente e não ultrapasse o limite de 4 fichas por depósito, usamos o que chamamos de complementares. Eles representam o espaço disponível em cada depósito. Por exemplo, se o depósito da M1 tiver 3 fichas, o complementar terá apenas 1. Se tentar entrar mais uma ficha sem espaço, o sistema não permite — isso evita travamentos e bloqueios.
 
-A modelagem foi feita dividindo os blocos em: robôs, máquinas e o sistema geral. Cada máquina tem um depósito de entrada, uma transição que representa o processamento, e um depósito de saída. Os robôs conectam essas etapas com controle baseado nos complementares. Reaproveitamos a estrutura das máquinas para as três etapas, o que deixou o modelo modular e organizado. No final, todas essas partes foram integradas em uma célula completa, que representa o 
+A modelagem foi feita dividindo os blocos em: robôs, máquinas e o sistema geral. Cada máquina tem um depósito de entrada, uma transição que representa o processamento, e um depósito de saída. Os robôs conectam essas etapas com controle baseado nos complementares. Reaproveitamos a estrutura das máquinas para as três etapas, o que deixou o modelo modular e organizado. No final, todas essas partes foram integradas em uma célula completa.
 
 
 ### Manufatura
