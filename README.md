@@ -44,6 +44,12 @@ Todas as máquinas do sistema compartilham a mesma estrutura de modelagem: um lu
 
 Por fim, todas essas partes estão integradas em uma estrutura única representando a célula de manufatura completa. O sistema geral simula o fluxo completo da produção, levando em consideração uma única célula. A modelagem foi validada para garantir a não ocorrência de deadlocks e respeitar a limitação de quatro itens por depósito, conforme as especificações do projeto.
 
+### Manufatura
+
+Manufatura, representando o maior nível de hierarquia do sistema, contendo sub-blocos de cada célula. 
+
+![Manufatura](imagens/Manufatura.jpeg)
+
 ### Robô 1
 
 Este módulo representa o transporte dos itens do **depósito de entrada da célula** para o **depósito de entrada da Máquina 1**. 
